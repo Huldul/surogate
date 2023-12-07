@@ -13,10 +13,10 @@
                     <div class="swiper-slide">
                         <img class="home_slider_effekt" src="./images/home_slider_img.svg" alt="">
                         <div class="home_slider_head">
-                            <span>{{$appeal->translations[0]->value}}</span>
+                            <span>{{$appeal->head}}</span>
                         </div>
-                        <h1 style="width: 450px">{{$appeal->translations[2]->value}}</h1>
-                        <p>Сурматеринство относится к современным вспомогательным репродуктивным технологиям, которые помогают бесплодным парам быть родителями родного по крови ребенка.</p>
+                        <h1 style="width: 450px">{{$appeal->title}}</h1>
+                        {!!$appeal->main!!}
                         <div class="home_btns">
                             <a href="#" class="home_btn_1 modal_btn">Оставить заявку</a>
                             <a href="#" class="home_btn_2">стать сурмамой</a>
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="home_img">
-            <img src="./images/home_img.png" alt="">
+            <img src="{{asset("storage/".$page->image)}}" alt="">
         </div>
     </div>
 

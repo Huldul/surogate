@@ -28,7 +28,7 @@
             <div class="about_text">
                 <div class="text_wrapper">{!!$about->main!!}</div>
 
-                <img class="mobile_img" src="./images/about_img.png" alt="">
+                <img class="mobile_img" src="{{asset("storage/".$about->image)}}" alt="">
 
                 <div class="about_statistic">
                     <div class="about_statistic_block">{!!$about->statistic1_about!!}</div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="about_img">
-                <img src="./images/about_img.png" alt="">
+                <img src="{{asset("storage/".$about->image)}}" alt="">
             </div>
         </div>
         <img class="about_effekt_img" src="./images/about_effekt_img.svg" alt="">

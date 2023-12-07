@@ -38,7 +38,7 @@
             <div class="legislation_right_in">
                 <img style="width: 500px" class="internal_img" src="{{asset('storage/'.$news->image)}}" alt="">
                 <div class="legislation_right">
-                    <img src="../images/legeslation_img.svg" alt="" class="effekt">
+                    <img src="{{asset("storage/".$contactus->image)}}" alt="" class="effekt">
                     <h3>{{$contactus->title}}</h3>
                     {!!$contactus->subtitle!!}
                     <div class="massanger">

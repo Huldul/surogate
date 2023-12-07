@@ -7,7 +7,7 @@
     <div class="main_container">
         <ul class="link_path">
             <li>
-                <a href="#">Главная</a>
+                <a href="/">Главная</a>
             </li>
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">

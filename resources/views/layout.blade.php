@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="{{asset("css/normolize.css")}}">
     <link rel="stylesheet" href="{{asset("css/style.css")}}">
 
-    <title>@yield('meta_title')</title>
 
-    <meta name="description" content="@yield('meta_description')">
-    <meta name="keywords" content="@yield('meta_keywords')">
+    <title>{{$seo->meta_title}}</title>
+
+    <meta name="description" content="{{$seo->meta_description}}">
+    <meta name="keywords" content="{{$seo->meta_keywords}}">
 </head>
 <body>
     

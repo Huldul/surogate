@@ -59,7 +59,7 @@
                     <img src="{{asset('storage/'.$contactus->image)}}" alt="">
                 </div>
                 <div class="application_right partenrsBlock">
-                    <img src="./images/partners_effekt.svg" alt="" class="application_effekt">
+                    <img src="{{asset("storage/".$contactus->image)}}" alt="" class="application_effekt">
                     <h3>{{$contactus->title}}</h3>
                     {!!$contactus->subtitle!!}
                     <div class="application_btns">

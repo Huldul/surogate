@@ -5,10 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use TCG\Voyager\Traits\Translatable;
 
 class News extends Model
 {
+    use Translatable;
     protected $fillable = ['title', 'url', 'subtitle', 'main', 'image'];
+    protected $translatable = ['title', 'subtitle', 'main', 'seo_title', 'meta_description', 'meta_keywords'];
 
     use HasFactory;
     public static function boot(){

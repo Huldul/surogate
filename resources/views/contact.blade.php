@@ -29,24 +29,24 @@
                 <div class="contact">
                     <span>Адрес</span>
                     <address class="contact_address" href="#">
-                        г.Астана, ул. Шевченко, дом 6,8 этаж, 803 кабинет
+                        {{setting('kontakty.adress')}}
                     </address>
                     <span>Телефон</span>
-                    <a href="tel:+87000000650">
-                        8 700 000 06 50
+                    <a href="tel:{{setting('kontakty.number')}}">
+                        {{setting('kontakty.number')}}
                     </a>
-                    <p>пн-вс 10:00 - 18:00</p>
+                    <p>{{setting('kontakty.work')}}</p>
                     <span>Почта</span>
-                    <a href="mailto:bolashak.kazahstan@mail.ru">
-                        bolashak.kazahstan@mail.ru
+                    <a href="mailto:{{setting('kontakty.email')}}">
+                        {{setting('kontakty.email')}}
                     </a>
                     <div class="contact_btns">
                         <div>
-                            <a href="#" target="_blank">
-                                <img src="./images/contact_whatsapp.svg" alt="">
+                            <a href="{{'https://'.setting('kontakty.wa')}}" target="_blank">
+                                <img src="{{asset("./images/contact_whatsapp.svg")}}" alt="">
                             </a>
-                            <a href="#" target="_blank">
-                                <img src="./images/contact_telegram.svg" alt="">
+                            <a href="{{'https://'.setting('kontakty.tg')}}" target="_blank">
+                                <img src="{{asset("./images/contact_telegram.svg")}}" alt="">
                             </a>
                         </div>
                         <button class="button_three modal_btn">связаться с нами</button>

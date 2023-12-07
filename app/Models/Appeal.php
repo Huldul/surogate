@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Spatie\Translatable\Translatable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 // use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -13,6 +14,7 @@ class Appeal extends Model
 {
     // use HasTranslations;
     use Translatable;
+    use HasFactory;
     protected $fillable = ['title', 'head', 'main']; // Замените на ваши реальные поля
 
     protected $translatable = ['title', 'head', 'main']; // Укажите поля, которые хотите сделать мультиязычными
